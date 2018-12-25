@@ -1,0 +1,81 @@
+<!-- 修改测试用例页面 -->
+
+{% extends 'layout.html' %}
+{% block body %}
+<style>
+    legend,ol,li,div,label,input{
+        margin: 10;
+        padding: 10;
+    }
+    legend {
+        font-size: 18px;
+        font-weight: normal;
+        padding-bottom: 0;
+    }
+    textarea,input{
+        background: #ffffff;
+        border: #FC3 solid 1px;
+        -webkit-border-radius: 3px;
+        outline: none;
+        padding: 10px;
+        width: 200px;
+    }
+    #button,#input{
+        background: #ffffff;
+        border: #FC3 solid 1px;
+        padding: 10px 10px;
+        width: 80px;
+    }
+    input,textarea{
+        float: right; 
+        display: block;
+        width: 600px;
+        overflow: hidden;
+    }
+    label{
+        display: inline-block;
+        width: 150px;
+        font-size: 18px;
+        line-height: 40px;
+        color: #999;
+    }
+</style> 
+  <form action="{{url_for('update_element')}}" method="post">
+      <fieldset style="position: relative">
+        <legend>元素修改</legend>
+        <ol>
+            <div>
+                <label for="ID">ID：</label>
+                <input id="ID" name="ID" type="text" value="{{yuansu_xianqqing['id']}}" autofocus="autofocus" readonly="readonly" >
+            </div>
+
+            <div>
+              <label for="modulename">模块名称：</label>
+              <input id="modulename" name="modulename" type="text" value="{{yuansu_xianqqing['modulename']}}" autofocus="autofocus" readonly="readonly">
+            </div>
+
+            <div>
+              <label for="modulenumber">模块编号：</label>
+              <input id="modulenumber" name="modulenumber" type="text" value="{{yuansu_xianqqing['modulenumber']}}" autofocus="autofocus" readonly="readonly">
+            </div>
+
+            <div>
+              <label for="yuansuname">元素名称：</label>
+              <input id="yuansuname" name="yuansuname" type="text" value="{{yuansu_xianqqing['yuansuname']}}" autofocus="autofocus" >
+            </div>
+
+            <div>
+              <label for="yuansuvalue">元素值：</label>
+              <input id="yuansuvalue" name="yuansuvalue" type="text" value="{{yuansu_xianqqing['yuansuvalue']}}" autofocus="autofocus" >
+            </div>
+
+            <div style="float:right;">
+              <input id="button" type = "submit" value="提交"></input>
+              <input id="button" type = "button" value="返回" onClick="javascript:location.href='{{url_for('element_all_list',element_id=yuansu_xianqqing['modulenumber'])}}'"></input>
+            </div> 
+            
+                           
+        </ol> 
+    </fieldset>   
+  </form> 
+{% endblock %}

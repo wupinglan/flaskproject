@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+    <headr>
+        <meta charset="UTF-8">
+        <title>自动化测试平台</title>
+        <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.js"></script>
+        <script src="/static/js/layui.js"></script>  
+        <script src="/static/js/layui.all.js"></script> 
+        <script src="/static/js/layer.js"></script> 
+        <link rel="stylesheet" href="/static/css/layout.css" media="screen" type="text/css" />      
+    </headr>
+    <style>
+        footer {
+            padding: 100px 100px;
+            text-align: center;
+        }
+        body {
+            /* background-image:url(/static/images/1.jpg);
+            background-repeat:no-repeat;
+            filter:alpha(Opacity=80);-moz-opacity:0.5;opacity: 0.5;  */
+            background-color:rgb(221, 235, 225);
+        }
+    </style>
+    <body>
+
+        <div class='nav'>
+        <ul>
+            <li><a href="{{url_for('index')}}">Home</a></li>
+            
+            <li><a href="{{url_for('modules_all')}}">功能模块</a></li>
+            
+            <li><a href="{{url_for('ceshibaogao')}}">测试报告</a></li>
+        </ul>
+        </div>
+        <div id = 'content'>
+                {% block body %} {% endblock %}
+        </div>
+
+        <footer>Copyright @ PingLan</footer>
+        
+    </body>
+</html>

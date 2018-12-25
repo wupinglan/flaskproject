@@ -1,0 +1,29 @@
+{% extends 'layout.html' %}
+{% block body %}
+<style>
+.p{
+    padding: 10px 30px;
+    /* border: 1px solid #888; */
+    margin:20px 0;
+}
+</style>
+{% for item in addyuansu%} 
+<div id="list">
+    <fieldset style="position: relative">
+    <legend>{{item['modulename']}}</legend>
+        <div class="p">
+            <table border="1" cellpadding="10">
+                <tr>
+                    <th>{{item['pagename']}}</th>
+                    <th>{{item['casename']}}</th>
+                </tr>
+                <tr>                    
+                    <td>{{count}}</td>
+                    <td>sdsd</td>
+                </tr>   
+            </table>
+        </div>       
+    </fieldset> 
+</div>
+{% endfor %} 
+{% endblock %}

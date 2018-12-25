@@ -1,0 +1,257 @@
+{% extends 'layout.html' %}
+{% block body %}
+<style>
+legend,ol,li,div,label,input,select,option{
+    margin: 10;
+    padding: 10;
+}
+legend {
+    font-size: 18px;
+    font-weight: normal;
+    padding-bottom: 0;
+}
+textarea,input,select{
+    background: #ffffff;
+    border: #FC3 solid 1px;
+    -webkit-border-radius:3px;
+    outline: none;
+    padding: 10px;
+    width: 200px;
+}
+#button,#input,#select{
+    background: #ffffff;
+    border: #FC3 solid 1px;
+    padding: 10px 10px;
+    width: 80px;
+}
+input,textarea,select{
+    float: right; 
+    display: block;
+    width: 600px;
+    overflow: hidden;
+}
+label{
+    display: inline-block;
+    width: 150px;
+    font-size: 18px;
+    line-height: 40px;
+    color: rgb(19, 18, 18);
+}
+p{
+    color: rgb(19, 18, 18);
+}
+</style> 
+
+<script type="text/JavaScript">
+    var modules_lists = {{ moduleslists|tojson|safe }};
+    function gradeChange_yuansu(){
+        var objS_yuansu = document.getElementById("modulename_yuansu_id");
+        for(var i = 0; i<modules_lists.length; i++){
+            var items = modules_lists[i];
+            if (items.modulename == objS_yuansu.value ) {
+                document.getElementById("module_yuansu_id").value=items.modulenumber;
+            }
+        }
+    }
+
+    function gradeChange_yongli(){
+        var objS_yuansu = document.getElementById("modulename_yongli_id");
+        for(var i = 0; i<modules_lists.length; i++){
+            var items = modules_lists[i];
+            if (items.modulename == objS_yuansu.value ) {
+                var mod_yongli_num = document.getElementById("modulenumber_yongli_id").value=items.modulenumber;
+                //根据模块名称获取数据库定位元素值
+                $.ajax({
+                    url: "{{ url_for('getjson') }}",
+                    type: "POST",
+                    data: JSON.stringify({mod_yongli_num}),
+                    contentType: "application/json",
+                    dataType: "json",
+                    success: function(data){
+                        document.getElementById("lvalue").innerHTML = "";
+                        for(var i = 0; i<data.length; i++){
+                            var  yuansu_value = '<option value="'+data[i].yuansuvalue+'">'+data[i].yuansuvalue+'</option>';
+                            document.getElementById('lvalue').innerHTML += yuansu_value;
+                        }                        
+                    }
+
+                });
+                }   
+            }
+        }
+    
+    window.onload = function(){
+        gradeChange_yuansu();
+        gradeChange_yongli();
+    }
+   //检查输入的模块名称是否重复
+   function module_number_chenck(test_chenck){
+        var module_chenck = document.getElementById(test_chenck);
+        for(var i=0;i<modules_lists.length;i++){
+            var itme = modules_lists[i]
+            if(itme['modulename'] == module_chenck.value) {
+                alert('您输入的模块名称重复');
+                break;
+            }
+            if(itme['modulenumber'] == module_chenck.value) {
+                alert('您输入的模块编号重复');
+                break;
+            }
+        }
+
+    }
+    
+    function chenck_form(form){
+        var form = document.getElementById(form);
+        if(form.modulename.value==''){
+            alert('请填写模块名称');
+            return false;
+        }else if(form.modulenumber.value==''){
+            alert('请填写模块编号');
+            return false;
+        }else{
+            for(var i=0;i<modules_lists.length;i++){
+                var itme = modules_lists[i]
+                if(itme['modulename'] == form.modulename.value) {
+                    alert('您输入的模块名称重复');
+                    return false;
+                    break;
+                }else if(itme['modulenumber'] == form.modulenumber.value) {
+                    alert('您输入的模块编号重复');
+                    return false;
+                    break;
+                }else{
+                    form.submit();
+                    alert('提交成功');
+                    break;
+                }
+            }
+        }
+    }
+
+</script>
+
+<form action="{{url_for('addmodules')}}" method="post" id="myform">
+    <fieldset style="position: relative">
+        <legend>功能模块添加</legend>
+        <ol>
+            <div>
+                <label for="modulename">模块名称：</label>
+                <input id="modulename_add" name="modulename" type="text" placeholder="模块名称" autofocus="autofocus" required="required" onBlur="module_number_chenck(this.id)">
+            </div>
+            <div>
+                <label for="modulenumber">模块编号：</label>
+                <input id="modulenumber" name="modulenumber" type="text" placeholder="请输入数字" autofocus="autofocus" required="required" onBlur="module_number_chenck(this.id)">
+            </div>
+            <div style="float:right;">
+                <input style='height:38px;width:80px;' type= "button" value="提交" onclick="chenck_form('myform')"></input>
+                <input style='height:38px;width:80px;' id="input" type="reset" value="重置"></input>
+            </div>   
+        </ol> 
+    </fieldset>   
+</form> 
+
+<form action="{{url_for('addyuansu')}}" method="post" >
+        <fieldset style="position: relative">
+            <legend>页面元素添加</legend>
+            <ol>
+                <div>
+                    <label for="modulename">模块名称：</label>
+                    <select style="height: 37px;width: 622px;" id="modulename_yuansu_id" name="modulename" onchange="gradeChange_yuansu()">
+                        {% for itme in moduleslists %} 
+                        <option value="{{itme['modulename']}}">{{itme['modulename']}}</option>
+                        {% endfor %}
+                    </select>
+                </div>
+                <div>
+                    <label for="module_yuansu_id">模块编号：</label>
+                    <input id="module_yuansu_id" name="modulenumber" type="text" placeholder="模块编号" autofocus="autofocus" value="" readonly="readonly">
+                </div>
+                <div>
+                    <label for="yuansuname">元素名称：</label>
+                    <input id="yuansuname" name="yuansuname" type="text" placeholder="元素名称" autofocus="autofocus" required="required">
+                </div>
+                <div>
+                    <label for="yuansuvalue">定位元素值：</label>
+                    <input id="yuansuvalue" name="yuansuvalue" type="text" placeholder="定位元素值" autofocus="autofocus" required="required">
+                </div>
+                <div style="float:right;">
+                    <input style='height:38px;width:80px;' id="button" type = "submit" value="提交"></input>
+                    <input style='height:38px;width:80px;' id="input" type="reset" value="重置"></input>
+                </div>   
+            </ol> 
+        </fieldset>   
+</form>
+
+<form action="{{url_for('handle')}}" method="post" >
+    <fieldset style="position: relative">
+        <legend>自动化测试步骤添加</legend>
+        <ol>
+            <div>
+                <label for="modulename">模块名称：</label>
+                <select style="height: 37px;width: 622px;" id="modulename_yongli_id" name="modulename" onchange="gradeChange_yongli()">
+                    {% for itme in moduleslists%}
+                    <option value="{{itme['modulename']}}">{{itme['modulename']}}</option>
+                    {% endfor %}
+                </select>
+            </div>
+            <div>
+                <label for="modulenumber">模块编号：</label>
+                <input id="modulenumber_yongli_id" name="modulenumber" type="text" placeholder="模块编号" autofocus="autofocus" value="" readonly="readonly">
+            </div>
+
+            <div>
+                <label for="elocation">定位元素名称：</label>
+                <input id="elocation" name="elocation" type="text" placeholder="定位元素名称" required="required">    
+            </div>
+
+            <div>
+                <label for="action">动作：</label>
+                <select style="height: 37px;width: 622px;" name="action" id="action">
+                    <option value="click">click</option>
+                    <option value="clear">clear</option>
+                    <option value="text">text</option>
+                    <option value="send_keys">send_keys</option>
+                    <option value="wait">wait</option>
+                    <option value="检查文本 - 属性">检查文本属性</option>
+                    <option value="检查文本">检查文本</option>
+                    <option value="执行JS点击">执行JS点击</option>
+                    <option value="切换到context">切换到context</option>
+                    <option value="是否包含指定文本">是否包含指定文本</option>
+                </select>
+            </div>
+            <div>
+                <label for="posmode">定位方式：</label>
+                <select style="height: 37px;width: 622px;" name="posmode" id="posmode">
+                    <option value="by_id">by_id</option>
+                    <option value="by_name">by_name</option>
+                    <option value="by_class_name">by_class_name</option>
+                    <option value="by_tag_name">by_tag_name</option>
+                    <option value="by_link_text">by_link_text</option>
+                    <option value="by_partial_link_text">by_partial_link_text</option>
+                    <option value="by_xpath">by_xpath</option>
+                    <option value="by_css_selector">by_css_selector</option>
+                </select>
+            </div>
+            <div>
+                <label for="lvalue">定位元素值：</label>
+                <select style="height: 37px;width: 622px;" name="lvalue" id="lvalue">
+                </select>
+            </div>
+            <div>
+                <label for="testdata">测试数据：</label>
+                <input id="testdata" name="testdata" type="text" placeholder="测试数据" required="required">
+            </div>
+            <div>
+                <label for="stepdes">步骤描述：</label>
+                <textarea id="stepdes" name="stepdes" rows="1" placeholder="步骤描述" data-required="请输入会议名称" required="required"></textarea> 
+            </div>
+            <div>
+                <input style='height:38px;width:80px;' id="button" type = "submit" value="提交"></input>
+                <input style='height:38px;width:80px;' id="input" type="reset" value="重置"></input>
+            </div>                
+        </ol> 
+    </fieldset>   
+</form>  
+{% endblock %}
+

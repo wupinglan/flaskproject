@@ -1,0 +1,35 @@
+{% extends 'layout.html' %}
+{% block body %}
+<style>
+    .p{
+        padding: 10px 30px;
+        /* border: 1px solid #888; */
+        margin:20px 0;
+        color: rgb(19, 18, 18);
+    }
+</style>
+<div >
+    <fieldset style="position: relative">
+        <legend>模块元素用例统计列表</legend>
+            <div class="p">
+                <table  border="1" cellpadding="10" id="list">
+                    <tr>
+                        <th>模块名称</th>
+                        <th>元素总数量</th>
+                        <th>用例总数</th>
+                        <th colspan="2">更多</th>
+                    </tr>
+                    {% for item in module_yuansu_yongli_all%}
+                    <tr>
+                        <td>{{item['modulename']}}</td>
+                        <td>{{item['countsyuansu']}}</td>
+                        <td>{{item['countsyongli']}}</td>
+                        <td><a style="font-size: 16px;" href="{{url_for('element_all_list',element_id=item['modulenumber'])}}">元素列表</a></td>
+                        <td><a style="font-size: 16px;" href="{{url_for('list',modulenumber_id=item['modulenumber'])}}">测试步骤列表</a></td>
+                    </tr>
+                    {%endfor%}
+                </table>
+            </div>
+    </fieldset>
+</div>
+{% endblock %}

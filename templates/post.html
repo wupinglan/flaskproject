@@ -1,0 +1,94 @@
+<!-- 修改测试用例页面 -->
+
+{% extends 'layout.html' %}
+{% block body %}
+<style>
+    legend,ol,li,div,label,input{
+        margin: 10;
+        padding: 10;
+    }
+    legend {
+        font-size: 18px;
+        font-weight: normal;
+        padding-bottom: 0;
+    }
+    textarea,input{
+        background: #ffffff;
+        border: #FC3 solid 1px;
+        -webkit-border-radius: 3px;
+        outline: none;
+        padding: 10px;
+        width: 200px;
+    }
+    #button,#input{
+        background: #ffffff;
+        border: #FC3 solid 1px;
+        padding: 10px 10px;
+        width: 80px;
+    }
+    input,textarea{
+        float: right; 
+        display: block;
+        width: 600px;
+        overflow: hidden;
+    }
+    label{
+        display: inline-block;
+        width: 150px;
+        font-size: 18px;
+        line-height: 40px;
+        color: #999;
+    }
+    </style>
+  <form action="{{url_for('handle')}} " method="post">
+      <fieldset style="position: relative">
+        <legend>自动化用例修改</legend>
+        <ol>
+            <div>
+                <label for="ID">ID：</label>
+                <input id="ID" name="ID" type="text" value="{{post['id']}}" autofocus="autofocus" readonly="readonly" >
+              </div>
+            <div>
+              <label for="modulename">模块名称：</label>
+              <input id="modulename" name="modulename" type="text" value="{{post['modulename']}}" autofocus="autofocus" readonly="readonly">
+            </div>
+            <div>
+              <label for="modulenumber">模块编号：</label>
+              <input id="modulenumber" name="modulenumber" type="text" value="{{post['modulenumber']}}" autofocus="autofocus" readonly="readonly">
+            </div>
+            <div>
+              <label for="action">动作：</label>
+              <input id="action" name="action" type="text" value="{{post['action']}}" autofocus="autofocus" required="required">
+            </div>
+            <div>
+              <label for="elocation">元素定位：</label>
+              <input id="elocation" name="elocation" type="text" value="{{post['elocation']}}" required="required">
+            </div>
+            <div>
+              <label for="posmode">定位方式：</label>
+              <input id="posmode" name="posmode" type="text" value="{{post['posmode']}}" required="required">
+            </div>
+            <div>
+              <label for="lvalue">定位值：</label>
+              <input id="lvalue" name="lvalue" type="text" value="{{post['lvalue']}}" required="required">
+            </div>
+            <div>
+              <label for="testdata">测试数据：</label>
+              <input id="testdata" name="testdata" type="text" value="{{post['testdata']}}" required="required">
+            </div>
+            <div>
+              <label for="stepdes">步骤描述：</label>
+              <input id="stepdes" name="stepdes" type="text" value="{{post['stepdes']}}" required="required">
+            </div>
+            <div>
+              <label for="timestamp">时间：</label>
+              <input id="timestamp" name="timestamp"  value="{{post['timestamp']}}" disabled="disabled">
+            </div>
+            <div style="float:right;">
+              <input id="button" type = "submit" value="提交"></input>
+              <input id="button" type = "button" value="返回" onClick="javascript:location.href='{{url_for('list',modulenumber_id=post['modulenumber'])}}'"></input>
+            </div>                
+        </ol> 
+    </fieldset>   
+  </form> 
+{% endblock %}

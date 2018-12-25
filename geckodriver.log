@@ -1,0 +1,561 @@
+1540464413744	geckodriver	INFO	geckodriver 0.18.0
+1540464413987	geckodriver	INFO	Listening on 127.0.0.1:52791
+1540464416264	geckodriver::marionette	INFO	Starting browser /Applications/Firefox.app/Contents/MacOS/firefox-bin with args ["-marionette"]
+1540464416966	geckodriver	INFO	geckodriver 0.18.0
+1540464417281	geckodriver	INFO	Listening on 127.0.0.1:52825
+1540464418363	geckodriver::marionette	INFO	Starting browser /Applications/Firefox.app/Contents/MacOS/firefox-bin with args ["-marionette"]
+2018-10-25 18:47:00.910 plugin-container[20990:689879] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x833f, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+2018-10-25 18:47:01.798 plugin-container[20991:689917] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x8d47, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+2018-10-25 18:47:02.848 plugin-container[20995:690029] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x753f, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1540464423128	Marionette	INFO	Listening on port 52811
+1540464423244	Marionette	WARN	TLS certificate errors will be ignored for this session
+1540464423417	Marionette	DEBUG	[4294967297] Frame script loaded
+1540464423490	Marionette	DEBUG	[4294967297] Frame script registered
+1540464423628	Marionette	DEBUG	[4294967297] Received DOM event beforeunload for about:blank
+2018-10-25 18:47:04.281 plugin-container[20997:690108] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x6f0b, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1540464424315	Marionette	DEBUG	[4294967297] Received DOM event pagehide for about:blank
+2018-10-25 18:47:04.827 plugin-container[20996:690103] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x8207, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+JavaScript error: https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/plugins/every_cookie_mac_82990d4.js, line 4: ReferenceError: c is not defined
+1540464425608	Marionette	DEBUG	[4294967297] Received DOM event DOMContentLoaded for https://www.baidu.com/
+1540464425926	Marionette	DEBUG	[4294967297] Received DOM event pageshow for https://www.baidu.com/
+1540464426346	Marionette	INFO	Listening on port 52848
+1540464426610	Marionette	WARN	TLS certificate errors will be ignored for this session
+1540464426706	Marionette	DEBUG	[4294967297] Frame script loaded
+1540464426714	Marionette	DEBUG	[4294967297] Frame script registered
+1540464426784	Marionette	DEBUG	[4294967297] Received DOM event beforeunload for about:blank
+2018-10-25 18:47:07.231 plugin-container[21002:690358] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x8c37, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1540464428194	Marionette	DEBUG	[4294967297] Received DOM event pagehide for about:blank
+JavaScript error: https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/plugins/every_cookie_mac_82990d4.js, line 4: ReferenceError: c is not defined
+1540464428978	Marionette	DEBUG	[4294967297] Received DOM event DOMContentLoaded for https://www.baidu.com/
+1540464429326	Marionette	DEBUG	[4294967297] Received DOM event pageshow for https://www.baidu.com/
+1540464437433	Marionette	INFO	Stopped listening on port 52848
+1540464439602	Marionette	INFO	Stopped listening on port 52811
+1540464468713	geckodriver	INFO	geckodriver 0.18.0
+1540464468864	geckodriver	INFO	Listening on 127.0.0.1:53252
+1540464470229	geckodriver::marionette	INFO	Starting browser /Applications/Firefox.app/Contents/MacOS/firefox-bin with args ["-marionette"]
+2018-10-25 18:47:53.233 plugin-container[21049:692345] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x873f, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+2018-10-25 18:47:53.897 plugin-container[21051:692431] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x843f, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+JavaScript error: resource:///modules/SavantShieldStudy.jsm, line 171: TypeError: this.addonListener is undefined
+console.error: (new Error("Connection closed before committing the transaction.", "resource://gre/modules/Sqlite.jsm", 632))
+1540464978300	geckodriver	INFO	geckodriver 0.18.0
+1540464978366	geckodriver	INFO	Listening on 127.0.0.1:56108
+1540464979462	geckodriver::marionette	INFO	Starting browser /Applications/Firefox.app/Contents/MacOS/firefox-bin with args ["-marionette"]
+2018-10-25 18:56:21.494 plugin-container[21377:702511] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x730b, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+2018-10-25 18:56:22.034 plugin-container[21378:702541] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x8a07, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1540464982906	Marionette	INFO	Listening on port 56118
+1540464983057	Marionette	WARN	TLS certificate errors will be ignored for this session
+1540464983139	Marionette	DEBUG	[4294967297] Frame script loaded
+1540464983166	Marionette	DEBUG	[4294967297] Frame script registered
+1540464983211	Marionette	DEBUG	[4294967297] Received DOM event beforeunload for about:blank
+2018-10-25 18:56:23.247 plugin-container[21382:702666] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x8f43, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1540464983423	Marionette	DEBUG	[4294967297] Received DOM event pagehide for about:blank
+JavaScript error: https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/plugins/every_cookie_mac_82990d4.js, line 4: ReferenceError: c is not defined
+1540464983989	Marionette	DEBUG	[4294967297] Received DOM event DOMContentLoaded for https://www.baidu.com/
+1540464984115	Marionette	DEBUG	[4294967297] Received DOM event pageshow for https://www.baidu.com/
+1543302798833	geckodriver	INFO	geckodriver 0.18.0
+1543302798913	geckodriver	INFO	Listening on 127.0.0.1:56707
+1543302800740	geckodriver::marionette	INFO	Starting browser /Applications/Firefox.app/Contents/MacOS/firefox-bin with args ["-marionette", "-headless"]
+*** You are running in headless mode.
+2018-11-27 15:13:23.214 plugin-container[13645:411038] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x8907, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+2018-11-27 15:13:23.852 plugin-container[13646:411074] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x6f43, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1543302805082	Marionette	INFO	Listening on port 56717
+2018-11-27 15:13:25.156 plugin-container[13651:411184] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x7703, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1543302805230	Marionette	WARN	TLS certificate errors will be ignored for this session
+1543302805307	Marionette	DEBUG	[4294967297] Frame script loaded
+1543302805317	Marionette	DEBUG	[4294967297] Frame script registered
+1543302828760	geckodriver	INFO	geckodriver 0.18.0
+1543302828832	geckodriver	INFO	Listening on 127.0.0.1:56782
+1543302830119	geckodriver::marionette	INFO	Starting browser /Applications/Firefox.app/Contents/MacOS/firefox-bin with args ["-marionette", "-headless"]
+*** You are running in headless mode.
+2018-11-27 15:13:51.959 plugin-container[13686:412108] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x6f3f, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+2018-11-27 15:13:52.368 plugin-container[13687:412137] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x8d43, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1543302833163	Marionette	INFO	Listening on port 56788
+1543302833184	Marionette	WARN	TLS certificate errors will be ignored for this session
+1543302833268	Marionette	DEBUG	[4294967297] Frame script loaded
+1543302833276	Marionette	DEBUG	[4294967297] Frame script registered
+1543302833345	Marionette	DEBUG	[4294967297] Received DOM event beforeunload for about:blank
+2018-11-27 15:13:53.409 plugin-container[13689:412239] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x7047, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1543302833579	Marionette	DEBUG	[4294967297] Received DOM event pagehide for about:blank
+JavaScript error: https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/plugins/every_cookie_mac_82990d4.js, line 4: ReferenceError: c is not defined
+1543302834074	Marionette	DEBUG	[4294967297] Received DOM event DOMContentLoaded for https://www.baidu.com/
+1543302834160	Marionette	DEBUG	[4294967297] Received DOM event pageshow for https://www.baidu.com/
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: NetworkError when attempting to fetch resource..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:711:13
+
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: NetworkError when attempting to fetch resource..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:711:13
+
+1543304238066	geckodriver	INFO	geckodriver 0.18.0
+1543304238152	geckodriver	INFO	Listening on 127.0.0.1:57075
+1543304239939	geckodriver::marionette	INFO	Starting browser /Applications/Firefox.app/Contents/MacOS/firefox-bin with args ["-marionette", "-headless"]
+*** You are running in headless mode.
+2018-11-27 15:37:21.788 plugin-container[14533:444337] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x8b3f, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+2018-11-27 15:37:22.238 plugin-container[14534:444367] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x8a3f, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1543304243107	Marionette	INFO	Listening on port 57081
+1543304243141	Marionette	WARN	TLS certificate errors will be ignored for this session
+1543304243223	Marionette	DEBUG	[4294967297] Frame script loaded
+1543304243225	Marionette	DEBUG	[4294967297] Frame script registered
+1543304243267	Marionette	DEBUG	[4294967297] Received DOM event beforeunload for about:blank
+2018-11-27 15:37:23.346 plugin-container[14540:444558] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x6e07, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1543304243559	Marionette	DEBUG	[4294967297] Received DOM event pagehide for about:blank
+JavaScript error: https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/plugins/every_cookie_mac_82990d4.js, line 4: ReferenceError: c is not defined
+1543304243937	Marionette	DEBUG	[4294967297] Received DOM event DOMContentLoaded for https://www.baidu.com/
+1543304244082	Marionette	DEBUG	[4294967297] Received DOM event pageshow for https://www.baidu.com/
+1543304316492	geckodriver	INFO	geckodriver 0.18.0
+1543304316578	geckodriver	INFO	Listening on 127.0.0.1:57244
+1543304318004	geckodriver::marionette	INFO	Starting browser /Applications/Firefox.app/Contents/MacOS/firefox-bin with args ["-marionette", "-headless"]
+*** You are running in headless mode.
+2018-11-27 15:38:40.285 plugin-container[14666:446905] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x7547, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+2018-11-27 15:38:40.719 plugin-container[14667:446932] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x7543, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+2018-11-27 15:38:41.425 plugin-container[14668:447009] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x8c3f, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1543304321713	Marionette	INFO	Listening on port 57250
+1543304321751	Marionette	WARN	TLS certificate errors will be ignored for this session
+1543304321837	Marionette	DEBUG	[4294967297] Frame script loaded
+1543304321846	Marionette	DEBUG	[4294967297] Frame script registered
+1543304321896	Marionette	DEBUG	[4294967297] Received DOM event beforeunload for about:blank
+1543304322243	Marionette	DEBUG	[4294967297] Received DOM event pagehide for about:blank
+JavaScript error: https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/plugins/every_cookie_mac_82990d4.js, line 4: ReferenceError: c is not defined
+1543304322627	Marionette	DEBUG	[4294967297] Received DOM event DOMContentLoaded for https://www.baidu.com/
+1543304322728	Marionette	DEBUG	[4294967297] Received DOM event pageshow for https://www.baidu.com/
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: NetworkError when attempting to fetch resource..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:711:13
+
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+1544609227507	geckodriver	INFO	geckodriver 0.18.0
+1544609227587	geckodriver	INFO	Listening on 127.0.0.1:50375
+1544609229293	geckodriver::marionette	INFO	Starting browser /Applications/Firefox.app/Contents/MacOS/firefox-bin with args ["-marionette"]
+2018-12-12 18:07:12.181 plugin-container[26662:703623] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x7a03, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+2018-12-12 18:07:12.916 plugin-container[26663:703658] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x8d3f, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+2018-12-12 18:07:13.711 plugin-container[26666:703803] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x763f, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1544609233723	Marionette	INFO	Listening on port 50383
+1544609233782	Marionette	WARN	TLS certificate errors will be ignored for this session
+1544609233872	Marionette	DEBUG	[4294967297] Frame script loaded
+1544609233891	Marionette	DEBUG	[4294967297] Frame script registered
+1544609234070	Marionette	DEBUG	[4294967297] Received DOM event beforeunload for about:blank
+1544609234446	Marionette	DEBUG	[4294967297] Received DOM event pagehide for about:blank
+1544609237499	Marionette	DEBUG	[4294967297] Received DOM event DOMContentLoaded for http://www.ebrun.com/20181211/265539.shtml
+1544609238544	Marionette	DEBUG	[4294967297] Received DOM event pageshow for http://www.ebrun.com/20181211/265539.shtml
+JavaScript error: http://bdimg.share.baidu.com/static/api/js/trans/logger.js?v=60603cb3.js, line 1: TypeError: n.ajax.request is not a function
+1544609433049	Marionette	INFO	Stopped listening on port 50383
+1544609532341	geckodriver	INFO	geckodriver 0.18.0
+1544609532416	geckodriver	INFO	Listening on 127.0.0.1:50866
+1544609533874	geckodriver::marionette	INFO	Starting browser /Applications/Firefox.app/Contents/MacOS/firefox-bin with args ["-marionette"]
+2018-12-12 18:12:15.884 plugin-container[26953:711196] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x743f, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+2018-12-12 18:12:16.339 plugin-container[26954:711225] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x8803, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1544609536788	Marionette	INFO	Listening on port 50872
+1544609536857	Marionette	WARN	TLS certificate errors will be ignored for this session
+1544609536926	Marionette	DEBUG	[4294967297] Frame script loaded
+1544609536928	Marionette	DEBUG	[4294967297] Frame script registered
+1544609536954	Marionette	DEBUG	[4294967297] Received DOM event beforeunload for about:blank
+1544609537387	Marionette	DEBUG	[4294967297] Received DOM event pagehide for about:blank
+2018-12-12 18:12:17.959 plugin-container[26957:711412] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x6d07, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1544609541824	Marionette	DEBUG	[4294967297] Received DOM event DOMContentLoaded for http://www.ebrun.com/20181211/265539.shtml
+1544609542831	Marionette	DEBUG	[4294967297] Received DOM event pageshow for http://www.ebrun.com/20181211/265539.shtml
+JavaScript error: http://bdimg.share.baidu.com/static/api/js/trans/logger.js?v=60603cb3.js, line 1: TypeError: n.ajax.request is not a function
+1544609619577	Marionette	INFO	Stopped listening on port 50872
+1544612308566	geckodriver	INFO	geckodriver 0.18.0
+1544612308648	geckodriver	INFO	Listening on 127.0.0.1:53330
+1544612310485	geckodriver::marionette	INFO	Starting browser /Applications/Firefox.app/Contents/MacOS/firefox-bin with args ["-marionette"]
+2018-12-12 18:58:32.714 plugin-container[29624:785814] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x763f, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+2018-12-12 18:58:33.054 plugin-container[29626:785871] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x813f, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1544612313673	Marionette	INFO	Listening on port 53338
+1544612313701	Marionette	WARN	TLS certificate errors will be ignored for this session
+1544612313795	Marionette	DEBUG	[4294967297] Frame script loaded
+1544612313799	Marionette	DEBUG	[4294967297] Frame script registered
+1544612313855	Marionette	DEBUG	[4294967297] Received DOM event beforeunload for about:blank
+2018-12-12 18:58:33.911 plugin-container[29627:785967] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x6c3f, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1544612314241	Marionette	DEBUG	[4294967297] Received DOM event pagehide for about:blank
+1544612318063	Marionette	DEBUG	[4294967297] Received DOM event DOMContentLoaded for http://www.ebrun.com/20181211/265539.shtml
+1544612320884	Marionette	DEBUG	[4294967297] Received DOM event pageshow for http://www.ebrun.com/20181211/265539.shtml
+JavaScript error: http://bdimg.share.baidu.com/static/api/js/trans/logger.js?v=60603cb3.js, line 1: TypeError: n.ajax.request is not a function
+1544662101870	Marionette	INFO	Stopped listening on port 53338
+1544670407057	geckodriver	INFO	geckodriver 0.18.0
+1544670407169	geckodriver	INFO	Listening on 127.0.0.1:61701
+1544670408441	geckodriver::marionette	INFO	Starting browser /Applications/Firefox.app/Contents/MacOS/firefox-bin with args ["-marionette"]
+2018-12-13 11:06:51.544 plugin-container[36965:996658] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x6d07, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+2018-12-13 11:06:52.179 plugin-container[36966:996694] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x713f, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+2018-12-13 11:06:52.878 plugin-container[36970:996795] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x8a03, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1544670412887	Marionette	INFO	Listening on port 61711
+1544670413203	Marionette	WARN	TLS certificate errors will be ignored for this session
+1544670413278	Marionette	DEBUG	[4294967297] Frame script loaded
+1544670413293	Marionette	DEBUG	[4294967297] Frame script registered
+1544670413343	Marionette	DEBUG	[4294967297] Received DOM event beforeunload for about:blank
+1544670413760	Marionette	DEBUG	[4294967297] Received DOM event pagehide for about:blank
+1544670416398	Marionette	DEBUG	[4294967297] Received DOM event DOMContentLoaded for http://www.ebrun.com/20181211/265539.shtml
+1544670417869	Marionette	DEBUG	[4294967297] Received DOM event pageshow for http://www.ebrun.com/20181211/265539.shtml
+1544670433505	Marionette	DEBUG	[4294967297] Canceled page load listener because no navigation has been detected
+JavaScript error: http://bdimg.share.baidu.com/static/api/js/trans/logger.js?v=60603cb3.js, line 1: TypeError: n.ajax.request is not a function
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1544670563303	Marionette	INFO	Stopped listening on port 61711
+1544670566636	geckodriver	INFO	geckodriver 0.18.0
+1544670566727	geckodriver	INFO	Listening on 127.0.0.1:62514
+1544670568020	geckodriver::marionette	INFO	Starting browser /Applications/Firefox.app/Contents/MacOS/firefox-bin with args ["-marionette"]
+2018-12-13 11:09:30.255 plugin-container[37134:1000449] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x8a03, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+2018-12-13 11:09:30.748 plugin-container[37135:1000483] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x863f, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1544670571380	Marionette	INFO	Listening on port 62528
+1544670571460	Marionette	WARN	TLS certificate errors will be ignored for this session
+2018-12-13 11:09:31.463 plugin-container[37136:1000565] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x883f, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1544670571547	Marionette	DEBUG	[4294967297] Frame script loaded
+1544670571554	Marionette	DEBUG	[4294967297] Frame script registered
+1544670571599	Marionette	DEBUG	[4294967297] Received DOM event beforeunload for about:blank
+1544670572008	Marionette	DEBUG	[4294967297] Received DOM event pagehide for about:blank
+1544670574900	Marionette	DEBUG	[4294967297] Received DOM event DOMContentLoaded for http://www.ebrun.com/20181211/265539.shtml
+1544670576298	Marionette	DEBUG	[4294967297] Received DOM event pageshow for http://www.ebrun.com/20181211/265539.shtml
+JavaScript error: http://bdimg.share.baidu.com/static/api/js/trans/logger.js?v=60603cb3.js, line 1: TypeError: n.ajax.request is not a function
+1544670712620	geckodriver	INFO	geckodriver 0.18.0
+1544670712717	geckodriver	INFO	Listening on 127.0.0.1:63361
+1544670713946	geckodriver::marionette	INFO	Starting browser /Applications/Firefox.app/Contents/MacOS/firefox-bin with args ["-marionette"]
+2018-12-13 11:11:56.208 plugin-container[37245:1004243] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x890b, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1544670716610	Marionette	INFO	Stopped listening on port 62528
+2018-12-13 11:11:56.885 plugin-container[37246:1004332] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x7743, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1544670717475	Marionette	INFO	Listening on port 63371
+1544670717525	Marionette	WARN	TLS certificate errors will be ignored for this session
+2018-12-13 11:11:57.550 plugin-container[37250:1004442] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x7303, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1544670717621	Marionette	DEBUG	[4294967297] Frame script loaded
+1544670717624	Marionette	DEBUG	[4294967297] Frame script registered
+1544670717695	Marionette	DEBUG	[4294967297] Received DOM event beforeunload for about:blank
+1544670718068	Marionette	DEBUG	[4294967297] Received DOM event pagehide for about:blank
+1544670721192	Marionette	DEBUG	[4294967297] Received DOM event DOMContentLoaded for http://www.ebrun.com/20181211/265539.shtml
+1544670722105	Marionette	DEBUG	[4294967297] Received DOM event pageshow for http://www.ebrun.com/20181211/265539.shtml
+1544670738243	Marionette	DEBUG	[4294967297] Canceled page load listener because no navigation has been detected
+1544670872827	geckodriver	INFO	geckodriver 0.18.0
+1544670872914	geckodriver	INFO	Listening on 127.0.0.1:64244
+1544670874126	geckodriver::marionette	INFO	Starting browser /Applications/Firefox.app/Contents/MacOS/firefox-bin with args ["-marionette"]
+2018-12-13 11:14:36.360 plugin-container[37389:1008463] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x9343, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+2018-12-13 11:14:36.907 plugin-container[37392:1008516] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x7203, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+JavaScript error: http://bdimg.share.baidu.com/static/api/js/trans/logger.js?v=60603cb3.js, line 1: TypeError: n.ajax.request is not a function
+1544670877563	Marionette	INFO	Stopped listening on port 63371
+1544670877780	Marionette	INFO	Listening on port 64254
+1544670877850	Marionette	WARN	TLS certificate errors will be ignored for this session
+1544670877944	Marionette	DEBUG	[4294967297] Frame script loaded
+1544670877951	Marionette	DEBUG	[4294967297] Frame script registered
+1544670878082	Marionette	DEBUG	[4294967297] Received DOM event beforeunload for about:blank
+1544670878462	Marionette	DEBUG	[4294967297] Received DOM event pagehide for about:blank
+2018-12-13 11:14:38.794 plugin-container[37394:1008725] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x863f, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1544670881125	Marionette	DEBUG	[4294967297] Received DOM event DOMContentLoaded for http://www.ebrun.com/20181211/265539.shtml
+1544670882393	Marionette	DEBUG	[4294967297] Received DOM event pageshow for http://www.ebrun.com/20181211/265539.shtml
+1544670897975	Marionette	DEBUG	[4294967297] Canceled page load listener because no navigation has been detected
+1544670968960	geckodriver	INFO	geckodriver 0.18.0
+1544670969063	geckodriver	INFO	Listening on 127.0.0.1:64787
+JavaScript error: http://bdimg.share.baidu.com/static/api/js/trans/logger.js?v=60603cb3.js, line 1: TypeError: n.ajax.request is not a function
+1544670970050	Marionette	INFO	Stopped listening on port 64254
+1544670970291	geckodriver::marionette	INFO	Starting browser /Applications/Firefox.app/Contents/MacOS/firefox-bin with args ["-marionette"]
+2018-12-13 11:16:12.386 plugin-container[37493:1012764] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x7847, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+2018-12-13 11:16:12.899 plugin-container[37495:1012797] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x763f, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1544670973587	Marionette	INFO	Listening on port 64802
+1544670973628	Marionette	WARN	TLS certificate errors will be ignored for this session
+1544670973719	Marionette	DEBUG	[4294967297] Frame script loaded
+1544670973727	Marionette	DEBUG	[4294967297] Frame script registered
+1544670973782	Marionette	DEBUG	[4294967297] Received DOM event beforeunload for about:blank
+2018-12-13 11:16:13.989 plugin-container[37498:1012929] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x7203, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1544670974186	Marionette	DEBUG	[4294967297] Received DOM event pagehide for about:blank
+1544670976853	Marionette	DEBUG	[4294967297] Received DOM event DOMContentLoaded for http://www.ebrun.com/20181211/265539.shtml
+1544670977942	Marionette	DEBUG	[4294967297] Received DOM event pageshow for http://www.ebrun.com/20181211/265539.shtml
+1544670993546	Marionette	DEBUG	[4294967297] Canceled page load listener because no navigation has been detected
+JavaScript error: http://bdimg.share.baidu.com/static/api/js/trans/logger.js?v=60603cb3.js, line 1: TypeError: n.ajax.request is not a function
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1544671034089	Marionette	INFO	Stopped listening on port 64802
+1544671324614	geckodriver	INFO	geckodriver 0.18.0
+1544671324686	geckodriver	INFO	Listening on 127.0.0.1:50211
+1544671325923	geckodriver::marionette	INFO	Starting browser /Applications/Firefox.app/Contents/MacOS/firefox-bin with args ["-marionette"]
+2018-12-13 11:22:08.781 plugin-container[37776:1020525] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x7547, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+2018-12-13 11:22:09.356 plugin-container[37779:1020556] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x8643, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1544671329921	Marionette	INFO	Listening on port 50223
+2018-12-13 11:22:09.984 plugin-container[37781:1020664] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x753f, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1544671330016	Marionette	WARN	TLS certificate errors will be ignored for this session
+1544671330108	Marionette	DEBUG	[4294967297] Frame script loaded
+1544671330112	Marionette	DEBUG	[4294967297] Frame script registered
+1544671330188	Marionette	DEBUG	[4294967297] Received DOM event beforeunload for about:blank
+1544671330626	Marionette	DEBUG	[4294967297] Received DOM event pagehide for about:blank
+1544671334525	Marionette	DEBUG	[4294967297] Received DOM event DOMContentLoaded for http://www.ebrun.com/20181211/265539.shtml
+1544671335482	Marionette	DEBUG	[4294967297] Received DOM event pageshow for http://www.ebrun.com/20181211/265539.shtml
+1544671351114	Marionette	DEBUG	[4294967297] Canceled page load listener because no navigation has been detected
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: NetworkError when attempting to fetch resource..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:711:13
+
+1544672201858	geckodriver	INFO	geckodriver 0.18.0
+1544672201958	geckodriver	INFO	Listening on 127.0.0.1:54415
+1544672203292	geckodriver::marionette	INFO	Starting browser /Applications/Firefox.app/Contents/MacOS/firefox-bin with args ["-marionette"]
+JavaScript error: http://bdimg.share.baidu.com/static/api/js/trans/logger.js?v=60603cb3.js, line 1: TypeError: n.ajax.request is not a function
+1544672204114	Marionette	INFO	Stopped listening on port 50223
+2018-12-13 11:36:45.862 plugin-container[38483:1036436] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x7f47, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+2018-12-13 11:36:46.268 plugin-container[38484:1036466] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x7907, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+2018-12-13 11:36:47.042 plugin-container[38486:1036603] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x8a03, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1544672207159	Marionette	INFO	Listening on port 54430
+1544672207247	Marionette	WARN	TLS certificate errors will be ignored for this session
+1544672207306	Marionette	DEBUG	[4294967297] Frame script loaded
+1544672207342	Marionette	DEBUG	[4294967297] Frame script registered
+1544672207374	Marionette	DEBUG	[4294967297] Received DOM event beforeunload for about:blank
+1544672207756	Marionette	DEBUG	[4294967297] Received DOM event pagehide for about:blank
+1544672210164	Marionette	DEBUG	[4294967297] Received DOM event DOMContentLoaded for http://www.ebrun.com/20181211/265539.shtml
+1544672211361	Marionette	DEBUG	[4294967297] Received DOM event pageshow for http://www.ebrun.com/20181211/265539.shtml
+1544672293117	geckodriver	INFO	geckodriver 0.18.0
+1544672293216	geckodriver	INFO	Listening on 127.0.0.1:54918
+JavaScript error: http://bdimg.share.baidu.com/static/api/js/trans/logger.js?v=60603cb3.js, line 1: TypeError: n.ajax.request is not a function
+1544672294124	Marionette	INFO	Stopped listening on port 54430
+1544672294415	geckodriver::marionette	INFO	Starting browser /Applications/Firefox.app/Contents/MacOS/firefox-bin with args ["-marionette"]
+2018-12-13 11:38:16.263 plugin-container[38537:1038835] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x7447, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+2018-12-13 11:38:16.736 plugin-container[38539:1038918] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x7243, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1544672297586	Marionette	INFO	Listening on port 54933
+2018-12-13 11:38:17.633 plugin-container[38543:1039026] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x733f, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1544672297679	Marionette	WARN	TLS certificate errors will be ignored for this session
+1544672297757	Marionette	DEBUG	[4294967297] Frame script loaded
+1544672297760	Marionette	DEBUG	[4294967297] Frame script registered
+1544672297799	Marionette	DEBUG	[4294967297] Received DOM event beforeunload for about:blank
+1544672298197	Marionette	DEBUG	[4294967297] Received DOM event pagehide for about:blank
+1544672300754	Marionette	DEBUG	[4294967297] Received DOM event DOMContentLoaded for http://www.ebrun.com/20181211/265539.shtml
+1544672301918	Marionette	DEBUG	[4294967297] Received DOM event pageshow for http://www.ebrun.com/20181211/265539.shtml
+1544672318019	Marionette	DEBUG	[4294967297] Canceled page load listener because no navigation has been detected
+1544672425355	geckodriver	INFO	geckodriver 0.18.0
+1544672425453	geckodriver	INFO	Listening on 127.0.0.1:55632
+JavaScript error: http://bdimg.share.baidu.com/static/api/js/trans/logger.js?v=60603cb3.js, line 1: TypeError: n.ajax.request is not a function
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1544672426448	Marionette	INFO	Stopped listening on port 54933
+1544672426708	geckodriver::marionette	INFO	Starting browser /Applications/Firefox.app/Contents/MacOS/firefox-bin with args ["-marionette"]
+2018-12-13 11:40:28.853 plugin-container[38702:1042662] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x8a3b, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+2018-12-13 11:40:29.358 plugin-container[38703:1042691] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x7143, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1544672429966	Marionette	INFO	Listening on port 55644
+1544672430056	Marionette	WARN	TLS certificate errors will be ignored for this session
+2018-12-13 11:40:30.134 plugin-container[38706:1042786] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x6947, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1544672430138	Marionette	DEBUG	[4294967297] Frame script loaded
+1544672430140	Marionette	DEBUG	[4294967297] Frame script registered
+1544672430204	Marionette	DEBUG	[4294967297] Received DOM event beforeunload for about:blank
+1544672430581	Marionette	DEBUG	[4294967297] Received DOM event pagehide for about:blank
+1544672433749	Marionette	DEBUG	[4294967297] Received DOM event DOMContentLoaded for http://www.ebrun.com/20181211/265539.shtml
+1544672434751	Marionette	DEBUG	[4294967297] Received DOM event pageshow for http://www.ebrun.com/20181211/265539.shtml
+1544672450376	Marionette	DEBUG	[4294967297] Canceled page load listener because no navigation has been detected
+1544672829868	geckodriver	INFO	geckodriver 0.18.0
+1544672829976	geckodriver	INFO	Listening on 127.0.0.1:57479
+1544672831270	geckodriver::marionette	INFO	Starting browser /Applications/Firefox.app/Contents/MacOS/firefox-bin with args ["-marionette"]
+2018-12-13 11:47:13.421 plugin-container[39097:1052695] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x7643, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+JavaScript error: http://bdimg.share.baidu.com/static/api/js/trans/logger.js?v=60603cb3.js, line 1: TypeError: n.ajax.request is not a function
+1544672834276	Marionette	INFO	Stopped listening on port 55644
+2018-12-13 11:47:14.525 plugin-container[39098:1052720] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x863f, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1544672834981	Marionette	INFO	Listening on port 57489
+1544672835058	Marionette	WARN	TLS certificate errors will be ignored for this session
+1544672835150	Marionette	DEBUG	[4294967297] Frame script loaded
+1544672835154	Marionette	DEBUG	[4294967297] Frame script registered
+1544672835195	Marionette	DEBUG	[4294967297] Received DOM event beforeunload for about:blank
+2018-12-13 11:47:15.247 plugin-container[39099:1052882] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x703f, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1544672835657	Marionette	DEBUG	[4294967297] Received DOM event pagehide for about:blank
+1544672838009	Marionette	DEBUG	[4294967297] Received DOM event DOMContentLoaded for http://www.ebrun.com/20181211/265539.shtml
+1544672839104	Marionette	DEBUG	[4294967297] Received DOM event pageshow for http://www.ebrun.com/20181211/265539.shtml
+1544672854722	Marionette	DEBUG	[4294967297] Canceled page load listener because no navigation has been detected
+1544672885836	geckodriver	INFO	geckodriver 0.18.0
+1544672885907	geckodriver	INFO	Listening on 127.0.0.1:57831
+1544672886985	geckodriver::marionette	INFO	Starting browser /Applications/Firefox.app/Contents/MacOS/firefox-bin with args ["-marionette"]
+JavaScript error: http://bdimg.share.baidu.com/static/api/js/trans/logger.js?v=60603cb3.js, line 1: TypeError: n.ajax.request is not a function
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1544672889500	Marionette	INFO	Stopped listening on port 57489
+2018-12-13 11:48:09.666 plugin-container[39148:1054536] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x8d0b, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+2018-12-13 11:48:09.809 plugin-container[39149:1054560] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x8b47, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1544672890704	Marionette	INFO	Listening on port 57841
+1544672890813	Marionette	WARN	TLS certificate errors will be ignored for this session
+2018-12-13 11:48:10.850 plugin-container[39150:1054742] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x8943, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1544672890901	Marionette	DEBUG	[4294967297] Frame script loaded
+1544672890934	Marionette	DEBUG	[4294967297] Frame script registered
+1544672890985	Marionette	DEBUG	[4294967297] Received DOM event beforeunload for about:blank
+1544672891369	Marionette	DEBUG	[4294967297] Received DOM event pagehide for about:blank
+1544672894126	Marionette	DEBUG	[4294967297] Received DOM event DOMContentLoaded for http://www.ebrun.com/20181211/265539.shtml
+1544672895261	Marionette	DEBUG	[4294967297] Received DOM event pageshow for http://www.ebrun.com/20181211/265539.shtml
+1544672910881	Marionette	DEBUG	[4294967297] Canceled page load listener because no navigation has been detected
+JavaScript error: http://bdimg.share.baidu.com/static/api/js/trans/logger.js?v=60603cb3.js, line 1: TypeError: n.ajax.request is not a function
+1544672966567	Marionette	INFO	Stopped listening on port 57841
+1544672969070	geckodriver	INFO	geckodriver 0.18.0
+1544672969136	geckodriver	INFO	Listening on 127.0.0.1:58319
+1544672970251	geckodriver::marionette	INFO	Starting browser /Applications/Firefox.app/Contents/MacOS/firefox-bin with args ["-marionette"]
+2018-12-13 11:49:32.177 plugin-container[39222:1056840] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x8d47, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+2018-12-13 11:49:32.628 plugin-container[39223:1056880] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x883f, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1544672973166	Marionette	INFO	Listening on port 58329
+1544672973233	Marionette	WARN	TLS certificate errors will be ignored for this session
+1544672973317	Marionette	DEBUG	[4294967297] Frame script loaded
+1544672973319	Marionette	DEBUG	[4294967297] Frame script registered
+1544672973381	Marionette	DEBUG	[4294967297] Received DOM event beforeunload for about:blank
+2018-12-13 11:49:33.418 plugin-container[39227:1056991] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x8e43, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1544672973968	Marionette	DEBUG	[4294967297] Received DOM event pagehide for about:blank
+1544672978835	Marionette	DEBUG	[4294967297] Received DOM event DOMContentLoaded for http://www.ebrun.com/20181211/265539.shtml
+1544672979821	Marionette	DEBUG	[4294967297] Received DOM event pageshow for http://www.ebrun.com/20181211/265539.shtml
+1544672995438	Marionette	DEBUG	[4294967297] Canceled page load listener because no navigation has been detected
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: NetworkError when attempting to fetch resource..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:711:13
+
+1544673720880	geckodriver	INFO	geckodriver 0.18.0
+1544673720980	geckodriver	INFO	Listening on 127.0.0.1:61975
+JavaScript error: http://bdimg.share.baidu.com/static/api/js/trans/logger.js?v=60603cb3.js, line 1: TypeError: n.ajax.request is not a function
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1544673721806	Marionette	INFO	Stopped listening on port 58329
+1544673722399	geckodriver::marionette	INFO	Starting browser /Applications/Firefox.app/Contents/MacOS/firefox-bin with args ["-marionette"]
+2018-12-13 12:02:05.070 plugin-container[39858:1073662] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x8e43, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+2018-12-13 12:02:05.733 plugin-container[39859:1073693] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x713b, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1544673726479	Marionette	INFO	Listening on port 61990
+1544673726527	Marionette	WARN	TLS certificate errors will be ignored for this session
+2018-12-13 12:02:06.622 plugin-container[39861:1073772] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x7147, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1544673726622	Marionette	DEBUG	[4294967297] Frame script loaded
+1544673726640	Marionette	DEBUG	[4294967297] Frame script registered
+1544673726691	Marionette	DEBUG	[4294967297] Received DOM event beforeunload for about:blank
+1544673727092	Marionette	DEBUG	[4294967297] Received DOM event pagehide for about:blank
+1544673730384	Marionette	DEBUG	[4294967297] Received DOM event DOMContentLoaded for http://www.ebrun.com/20181211/265539.shtml
+1544673731223	Marionette	DEBUG	[4294967297] Received DOM event pageshow for http://www.ebrun.com/20181211/265539.shtml
+JavaScript error: http://bdimg.share.baidu.com/static/api/js/trans/logger.js?v=60603cb3.js, line 1: TypeError: n.ajax.request is not a function
+1544673776008	Marionette	INFO	Stopped listening on port 61990
+1544673779125	geckodriver	INFO	geckodriver 0.18.0
+1544673779241	geckodriver	INFO	Listening on 127.0.0.1:62355
+1544673780516	geckodriver::marionette	INFO	Starting browser /Applications/Firefox.app/Contents/MacOS/firefox-bin with args ["-marionette"]
+2018-12-13 12:03:03.483 plugin-container[39910:1075526] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x8507, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+2018-12-13 12:03:04.058 plugin-container[39911:1075559] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x6f03, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1544673784686	Marionette	INFO	Listening on port 62371
+2018-12-13 12:03:04.782 plugin-container[39913:1075630] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x913f, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1544673784814	Marionette	WARN	TLS certificate errors will be ignored for this session
+1544673784919	Marionette	DEBUG	[4294967297] Frame script loaded
+1544673784947	Marionette	DEBUG	[4294967297] Frame script registered
+1544673785008	Marionette	DEBUG	[4294967297] Received DOM event beforeunload for about:blank
+1544673785402	Marionette	DEBUG	[4294967297] Received DOM event pagehide for about:blank
+1544673787820	Marionette	DEBUG	[4294967297] Received DOM event DOMContentLoaded for http://www.ebrun.com/20181211/265539.shtml
+1544673789329	Marionette	DEBUG	[4294967297] Received DOM event pageshow for http://www.ebrun.com/20181211/265539.shtml
+1544673804956	Marionette	DEBUG	[4294967297] Canceled page load listener because no navigation has been detected
+1544673810489	Marionette	DEBUG	[4294967297] Canceled page load listener because no navigation has been detected
+JavaScript error: http://bdimg.share.baidu.com/static/api/js/trans/logger.js?v=60603cb3.js, line 1: TypeError: n.ajax.request is not a function
+1544674052861	Marionette	INFO	Stopped listening on port 62371
+1544674059009	geckodriver	INFO	geckodriver 0.18.0
+1544674059099	geckodriver	INFO	Listening on 127.0.0.1:63718
+1544674060294	geckodriver::marionette	INFO	Starting browser /Applications/Firefox.app/Contents/MacOS/firefox-bin with args ["-marionette"]
+2018-12-13 12:07:42.340 plugin-container[40096:1081745] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x8403, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+2018-12-13 12:07:42.735 plugin-container[40099:1081776] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x8803, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1544674063483	Marionette	INFO	Listening on port 63728
+2018-12-13 12:07:43.522 plugin-container[40100:1081858] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x8c43, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1544674063579	Marionette	WARN	TLS certificate errors will be ignored for this session
+1544674063666	Marionette	DEBUG	[4294967297] Frame script loaded
+1544674063733	Marionette	DEBUG	[4294967297] Frame script registered
+1544674063780	Marionette	DEBUG	[4294967297] Received DOM event beforeunload for about:blank
+1544674064193	Marionette	DEBUG	[4294967297] Received DOM event pagehide for about:blank
+1544674066494	Marionette	DEBUG	[4294967297] Received DOM event DOMContentLoaded for http://www.ebrun.com/20181211/265539.shtml
+1544674067759	Marionette	DEBUG	[4294967297] Received DOM event pageshow for http://www.ebrun.com/20181211/265539.shtml
+1544674083404	Marionette	DEBUG	[4294967297] Canceled page load listener because no navigation has been detected
+1544674088898	Marionette	DEBUG	[4294967297] Canceled page load listener because no navigation has been detected
+JavaScript error: http://bdimg.share.baidu.com/static/api/js/trans/logger.js?v=60603cb3.js, line 1: TypeError: n.ajax.request is not a function
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: NetworkError when attempting to fetch resource..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:711:13
+
+JavaScript error: http://bdimg.share.baidu.com/static/api/js/trans/logger.js?v=60603cb3.js, line 1: TypeError: n.ajax.request is not a function
+1544679540340	Marionette	INFO	Stopped listening on port 63728
