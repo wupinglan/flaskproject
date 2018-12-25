@@ -179,7 +179,8 @@ def test_class():
     data = request.json
     print(data)
     return render_template('test_class.html',case_vual=data)
-
+    
+#run里面增减已发送吧技术
 
 #执行selenium代码   
 @app.route('/testRun')
