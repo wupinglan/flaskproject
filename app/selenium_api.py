@@ -1,9 +1,12 @@
+import os,sys
+sys.path.append(os.path.join(os.path.abspath('.')))
 from selenium import webdriver
 import time
+from config import *
 class SeleniumApi(object):
-    def step_startup():
-        driver = webdriver.Firefox()
-        driver.get("http://www.baidu.com")
+    def step_startup(self):
+        self.driver = webdriver.Firefox()
+        self.driver.get(URL)
 
     #对元素进行点击 方法   
     def step_click(self,by_mode,by_value):

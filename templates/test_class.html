@@ -7,21 +7,48 @@
     }
     
 </style> 
-<form action="" method="post" id="myform">
+<script type="text/javascript">
+    function trimSpace(array){  
+        for(var i = 0 ;i<array.length;i++){  
+            if(array[i] == "" || array[i] == null || typeof(array[i]) == "undefined"){  
+                    array.splice(i,1);  
+                    i= i-1;  
+
+            }  
+        }  
+        return array;  
+    } 
+
+    var temp= localStorage.getItem("temp");//在本地缓存中取出数据
+    // console.log(temp);//输出
+    var a = temp.split(',');
+    // console.log(a);
+    // console.log(trimSpace(a));//
+    var modulename = trimSpace(a)[0]
+    var modulenumber = trimSpace(a)[1]
+    var casestep = trimSpace(a).slice(2)
+    console.log(casestep);
+    $(function(){ //定义function函数
+        $('#modulename').val(modulename);
+        $('#modulenumber').val(modulenumber);
+        $('#casestep').val(casestep);
+    })
+</script>
+<form action="{{url_for('insert_test_class')}}" method="post">
         <fieldset style="position: relative">
             <legend>用例编辑</legend>
             <ol>
                 <div>
                     <label for="modulename">模块名称：</label>
-                    <input id="modulename_add" name="modulename" type="text" placeholder="模块名称" autofocus="autofocus" required="required" onBlur="">
+                    <input id="modulename" name="modulename" type="text"  placeholder="模块名称" autofocus="autofocus" required="required" onBlur="">
                 </div>
                 <div>
                     <label for="modulenumber">模块编号：</label>
                     <input id="modulenumber" name="modulenumber" type="text" placeholder="请输入数字" autofocus="autofocus" required="required" onBlur="">
                 </div>
                 <div>
-                    <label for="describecase">用例描述：</label>
-                    <input id="describecase" name="describecase" type="text" placeholder="用例描述" autofocus="autofocus" required="required" onBlur="">
+                    <label for="casedescribe">用例描述：</label>
+                    <input id="casedescribe" name="casedescribe" type="text" placeholder="用例描述" autofocus="autofocus" required="required" onBlur="">
                 </div>
                 <div>
                     <label for="Usecasemethod">用例方法名：</label>
@@ -37,8 +64,8 @@
                     <textarea  style=" height:500px;overflow:scroll;resize:none;" id="casestep" name="casestep" type="text" placeholder="用例步骤" autofocus="autofocus" ></textarea>
                 </div>
                 <div style="float:left">
-                    <input style='height:38px;width:80px;' type= "button" value="提交" onclick=""></input>
-                    <input style='height:38px;width:80px;' id="input" type="reset" value="重置"></input>
+                        <input style='height:38px;width:80px;' id="button" type = "submit" value="提交"></input>
+                        <input style='height:38px;width:80px;' id="input" type="reset" value="重置"></input>
                 </div>   
             </ol> 
         </fieldset>   

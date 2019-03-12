@@ -1,0 +1,32 @@
+{% extends 'layout.html' %}
+{% block body %}
+<style>
+    .p{
+        padding: 10px 30px;
+        /* border: 1px solid #888; */
+        margin:20px 0;
+        color: rgb(19, 18, 18);
+    }
+</style>
+<div >
+    <fieldset style="position: relative">
+        <legend>模块元素用例统计列表</legend>
+            <div class="p">
+                <table  border="1" cellpadding="10" id="list">
+                    <tr>
+                        <th>id</th>
+                        <th>报告名称</th>
+                        <th>报告详情</th>
+                    </tr>
+                    {% for item in selectAllReport%}
+                    <tr>
+                        <td>{{item['id']}}</td>
+                        <td>{{item['testReportName']}}</td>
+                        <td><a style="font-size: 16px;" href="{{url_for('details_of_test_report',report_id=item['id'])}}">元素列表</a></td>
+                    </tr>
+                    {%endfor%}
+                </table>
+            </div>
+    </fieldset>
+</div>
+{% endblock %}

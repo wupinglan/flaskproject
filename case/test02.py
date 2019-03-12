@@ -3,10 +3,10 @@ from selenium.webdriver.common.action_chains import ActionChains
 import time,json
 import selenium.webdriver.support.ui as ui
 from browsermobproxy import Server 
-# driver = webdriver.Firefox()
-# driver.get("http://www.ebrun.com/20181211/265539.shtml")
-# time.sleep(5)
-# test = driver.find_element_by_class_name('cmt-textarea')
+driver = webdriver.Firefox()
+driver.get("https://xueqiu.com/hq/screener")
+time.sleep(5)
+test = driver.find_element_by_class_name('portfolio')
 # time.sleep(5)
 # ActionChains(driver).move_to_element(test).perform()
 # time.sleep(5)
@@ -28,19 +28,19 @@ from browsermobproxy import Server
 # time.sleep(5)
 # driver.quit()
 
-server = Server("/Users/wupinglan/Desktop/git/flaskproject/browsermob-proxy-2.1.4/bin/browsermob-proxy")
-server.start() 
-proxy = server.create_proxy() 
+# server = Server("/Users/wupinglan/Desktop/git/flaskproject/browsermob-proxy-2.1.4/bin/browsermob-proxy")
+# server.start() 
+# proxy = server.create_proxy() 
 
-profile = webdriver.FirefoxProfile() 
-profile.set_proxy(proxy.selenium_proxy()) 
-driver = webdriver.Firefox(firefox_profile=profile) 
+# profile = webdriver.FirefoxProfile() 
+# profile.set_proxy(proxy.selenium_proxy()) 
+# driver = webdriver.Firefox(firefox_profile=profile) 
 
-proxy.new_har("baidu") 
-driver.get("http://api.ebrun.com/api/manage/activity/apply-activity-material?meeting_id=1958&luck_draw_id=49&uid&source=H5&name=接口测试吴平兰&phone=18610851331&company=测试&job=测试&email=xiaowuaaaaa@qq.com") 
-proxy.wait_for_traffic_to_stop(1, 60) 
-with open('/Users/wupinglan/Desktop/git/flaskproject/case/1.har', 'w') as outfile:
-    json.dump(proxy.har, outfile) 
+# proxy.new_har("baidu") 
+# driver.get("http://api.ebrun.com/api/manage/activity/apply-activity-material?meeting_id=1958&luck_draw_id=49&uid&source=H5&name=接口测试吴平兰&phone=18610851331&company=测试&job=测试&email=xiaowuaaaaa@qq.com") 
+# proxy.wait_for_traffic_to_stop(1, 60) 
+# with open('/Users/wupinglan/Desktop/git/flaskproject/case/1.har', 'w') as outfile:
+#     json.dump(proxy.har, outfile) 
 
-server.stop() 
-driver.quit() 
+# server.stop() 
+# driver.quit() 

@@ -1,0 +1,60 @@
+{% extends 'layout.html' %}
+{% block body %}
+<style>
+.p{
+    padding: 10px 30px;
+    /* border: 1px solid #888; */
+    margin:20px 0;
+}
+/* 半透明的遮罩层 */
+#overlay {
+    background: #000;
+    filter: alpha(opacity=50); /* IE的透明度 */
+    opacity: 0.5;  /* 透明度 */
+    display: none;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 100; /* 此处的图层要大于页面 */
+}
+</style>
+
+<div id="list">
+    <fieldset style="position: relative">
+    <legend>用例列表</legend>
+        <div class="p">
+                <table id="example_table" border="1" cellspacing="0" cellpadding="8" >
+                <tr>
+                    <th>ID</th>
+                    <th>模块名称</th>
+                    <th>模块编号</th>
+                    <th>用例步骤</th>
+                    <th>用例描述</th>
+                    <th>用例方法名</th>
+                    <th>用例名称</th>
+                    <th colspan="2">操作</th>
+                </tr>
+                {% for item in select_all_testcase %}
+                <tr>                    
+                    <td>{{item['id']}}</td>
+                    <td>{{item['modulename']}}</td>
+                    <td>{{item['modulenumber']}}</td>
+                    <td>{{item['casestep']}}</td>
+                    <td>{{item['casedescribe']}}</td>
+                    <td>{{item['Usecasemethod']}}</td>
+                    <td>{{item['Usecasefile']}}</td>
+                    <td >
+                        <a style="font-size: 16px;" href="{{url_for('updateClassTest',classTextId=item['id'])}}">修改用例</a>
+                    </td>
+                    <td >
+                        <a style="font-size: 16px;" href="{{url_for('testRun',testClaseId=item['id'])}}">执行用例</a>
+                    </td>
+                </tr>
+                {%endfor%}
+            </table>
+        </div>       
+    </fieldset>  
+</div>
+{% endblock %}

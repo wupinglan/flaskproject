@@ -1,12 +1,13 @@
 # coding:utf8
+import os,sys
+sys.path.append(os.path.join(os.path.abspath('.')))
 from flask import *
-from flask import redirect
+from flask import redirect,url_for
 import warnings
 warnings.filterwarnings("ignore")
 import time
 from app.py_mysql import *
-from app.selenium_api import *
-
+from app.run_all_case import * 
 app = Flask(__name__)
 app.config.from_object(__name__)
 #首页
@@ -65,7 +66,6 @@ def post(post_id):
 @app.route('/handle',methods = ['POST'])
 def handle():
     data = request.form
-    print(data)
     (db,cursor) = connectdb()
     if 'ID' not in data.to_dict().keys():
         cursor.execute("insert into post(modulename, modulenumber, action, testdata, stepdes, lvalue, posmode, elocation, timestamp) values(%s, %s, %s, %s, %s,%s, %s, %s, %s)",[data['modulename'] ,data['modulenumber'] ,data['action'] ,data['testdata'] ,data['stepdes'] ,data['lvalue'] ,data['posmode'] ,data['elocation'] ,int(time.time())])
@@ -151,47 +151,71 @@ def update_element():
     closedb(db,cursor)
     return redirect(url_for('element_all_list',element_id=data['modulenumber']))
 
-#测试用例页面
-# @app.route('/insert_test_class',methods=['GET','POST'])
-# def insert_test_class():
-#     data = request.json
-#     if data['arrayObj']:
-#         # with open('/Users/wupinglan/Desktop/git/flaskproject/case/test.txt', 'w') as fail:
-#         test_class = []
-#         for i in range(len(data['arrayObj'])):
-#             if len(data['arrayObj'][i]):
-#                 step = "步骤:" + data['arrayObj'][i][0]
-#                 modulename = "模块名称："+data['arrayObj'][i][1]
-#                 describe = "步骤描述："+data['arrayObj'][i][2]
-#                 modulenumber = data['arrayObj'][i][3]
-#                 insert_testcase(step, describe, modulename, int(modulenumber))
-#                 quanbu = step + modulename + describe + modulenumber + '\n'
-#                 test_class.append(quanbu)
-#                 # fail.write(quanbu)
-#         #     fail.close()
-#         return jsonify(test_class)
-#     else:
-#         return jsonify('请先选择需要生成的测试步骤')
-        
-
-@app.route('/test_class',methods=['GET','POST'])
-def test_class():
-    data = request.json
+#测试用例生成py文件和插入数据库
+@app.route('/insert_test_class',methods=['GET','POST'])
+def insert_test_class():
+    data = request.form
     print(data)
-    return render_template('test_class.html',case_vual=data)
-    
-#run里面增减已发送吧技术
+    if 'ID' not in data.to_dict().keys():
+        print('没有id')
+        insert_testcase(data['casestep'], data['casedescribe'], data['modulename'], int(data['modulenumber']) ,data['Usecasemethod'] ,data['Usecasefile'])
+    else:
+        print('有id')
+        update_one_testcase(data['casestep'], data['casedescribe'], data['modulename'], int(data['modulenumber']) ,data['Usecasemethod'] ,data['Usecasefile'] ,data['ID'])
+    return redirect(url_for('test_class_list',select_all_testcase=select_testcase()))
+
+        
+#测试用例详情页面
+@app.route('/test_class_value',methods=['GET','POST'])
+def test_class_value():
+    # print(test_class_value)
+    return render_template('test_class.html')
+
+#修改某个测试用例
+@app.route('/updateClassTest/<classTextId>',methods=['GET','POST'])
+def updateClassTest(classTextId):
+    # print(test_class_value)
+    classTextValue = select_one_testCase(classTextId)
+    return render_template('updateClassTest.html',classTextValue=classTextValue)
+
+#所有模块测试用例列表页面
+@app.route('/test_class_list',methods=['GET','POST'])
+def test_class_list():
+    select_all_testcase=select_testcase()
+    return render_template('test_class_list.html',select_all_testcase=select_all_testcase)
+
+#某个模块测试用例列表页面
+@app.route('/select_modul_testCase/<modulenumber_id>',methods=['GET','POST'])
+def select_modul_testCase(modulenumber_id):
+    select_modul_testCase=selectModulTestCase(modulenumber_id)
+    return render_template('test_class_list.html',select_all_testcase=select_modul_testCase)
 
 #执行selenium代码   
-@app.route('/testRun')
-def testRun():
+@app.route('/testRun/<testClaseId>')
+def testRun(testClaseId):
     print("这是执行测试用例的方法")
-    # SeleniumApi.step_startup()
+    selectRunValue = selectRunTestCase(int(testClaseId))
+    print(type(selectRunValue))
+    caseNmae = selectRunValue[0]['Usecasefile']
+    caseValue = selectRunValue[0]['casestep']
+    createTestcase(caseNmae,caseValue)
+    runCase(caseNmae)
+    insert_testReport(caseNmae+'.html')
+    return render_template('testReport.html',selectAllReport=select_All_Report())
+    # runCase('nihao')
 
-#测试报告
-@app.route('/ceshibaogao')
-def ceshibaogao():
-    return render_template('test.html')
+#测试报告列表
+@app.route('/testReport')
+def testReport():
+    selectAllReport = select_All_Report()
+    return render_template('testReport.html',selectAllReport=selectAllReport)
+
+#测试报告详情
+@app.route('/details_of_test_report/<report_id>')
+def details_of_test_report(report_id):
+    report_name = selectTestReportName(int(report_id))
+    return render_template(report_name[0]['testReportName'])
+
 
 if __name__ == '__main__':
     app.run(debug=True)

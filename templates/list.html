@@ -1,8 +1,8 @@
 {% extends 'layout.html' %}
 {% block body %}
-<link rel="stylesheet" href="//apps.bdimg.com/libs/jqueryui/1.10.4/css/jquery-ui.min.css">
-<script src="//apps.bdimg.com/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
-<link rel="stylesheet" href="jqueryui/style.css">
+<link rel="stylesheet" href="http://apps.bdimg.com/libs/jqueryui/1.10.4/css/jquery-ui.min.css">
+<script src="http://apps.bdimg.com/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+<link rel="stylesheet" href="http://apps.bdimg.com/libs/jqueryui/style.css">
 <style> 
 .p{
     padding: 10px 30px;
@@ -22,9 +22,11 @@
     height: 100%;
     z-index: 100; /* 此处的图层要大于页面 */
 }
+
 </style>
 <script>
     var arrayObj = new Array();
+    var arrayObj2 = new Array();
     var send_keys = new Array();
     var click = new Array();
     var clear = new Array();
@@ -33,68 +35,181 @@
         $("#dt_id input").prop("checked",false);//刷新页面设置默认不选择中状态
         $("#dt_id input").click(function(){//为表格的行添加点击事件
             var tr = $(this);
+            var td = tr.parent().parent().find('td');//找到td元素
             if (tr.prop('checked')) {//jquery 1.6以前版本 用  $(this).attr("checked")
                 $(tr).prop("checked",true);//设置为选中状态
-                var td = tr.parent().parent().find('td');//找到td元素
+                
                 if(td[4].innerHTML=='send_keys'){                    
-                    var SeleniumApi_send_keys = "SeleniumApi.step_send_keys("+"'"+td[6].innerHTML +"'"+ ','+"'"+td[7].innerHTML+"'"+','+"'"+td[8].innerHTML+"')";
+                    var SeleniumApi_send_keys = "SeleniumApi.step_send_keys("+'self,'+"'"+td[6].innerHTML +"'"+ ','+"'"+td[7].innerHTML+"'"+','+"'"+td[8].innerHTML+"')";
                     var modelname = td[2].innerHTML;
                     var describe = td[9].innerHTML;
                     var modulenumber = td[3].innerHTML;
-                    send_keys.push(SeleniumApi_send_keys,modelname,describe,modulenumber);
+                    send_keys.push(modelname,modulenumber,SeleniumApi_send_keys,describe); 
+                    // arrayObj.push(send_keys);    
                 }else if(td[4].innerHTML=='click'){                   
-                    var SeleniumApi_click = "SeleniumApi.step_click("+"'"+td[6].innerHTML +"'"+','+"'"+td[7].innerHTML+"')";
+                    var SeleniumApi_click = "SeleniumApi.step_click("+'self,'+"'"+td[6].innerHTML +"'"+','+"'"+td[7].innerHTML+"')";
                     var modelname = td[2].innerHTML;
                     var describe = td[9].innerHTML;
                     var modulenumber = td[3].innerHTML;
-                    click.push(SeleniumApi_click,modelname,describe,modulenumber);
+                    click.push(modelname,modulenumber,SeleniumApi_click,describe);
+                    // arrayObj.push(click);
+                    // console.log(click)
                 }else if(td[4].innerHTML=='clear'){    
-                    var SeleniumApi_clear = "SeleniumApi.step_clear("+"'"+td[6].innerHTML +"'"+','+"'"+td[7].innerHTML+"')";
+                    var SeleniumApi_clear = "SeleniumApi.step_clear("+'self,'+"'"+td[6].innerHTML +"'"+','+"'"+td[7].innerHTML+"')";
                     var modelname = td[2].innerHTML;
                     var describe = td[9].innerHTML;
                     var modulenumber = td[3].innerHTML;
-                    clear.push(SeleniumApi_clear,modelname,describe,modulenumber);
+                    clear.push(modelname,modulenumber,SeleniumApi_clear,describe);
+                    // arrayObj.push(clear);
                 }else if(td[4].innerHTML=='text'){                    
-                    var SeleniumApi_text = "SeleniumApi.step_text("+"'"+td[6].innerHTML+"'"+','+"'"+td[7].innerHTML+"')";
+                    var SeleniumApi_text = "SeleniumApi.step_text("+'self,'+"'"+td[6].innerHTML+"'"+','+"'"+td[7].innerHTML+"')";
                     var modelname = td[2].innerHTML;
                     var describe = td[9].innerHTML;
                     var modulenumber = td[3].innerHTML;
-                    text.push(SeleniumApi_text,modelname,describe,modulenumber);
-                }
+                    text.push(modelname,modulenumber,SeleniumApi_text,describe);
+                    // arrayObj.push(text);
+                }   
             } else {
                 $(tr).prop("checked",false);//设置为不选中状态
+                
+                if(td[4].innerHTML=='send_keys'){ 
+                    var describe = td[9].innerHTML;
+                    for(var i=0;i<send_keys.length;i++ ){
+                        if(send_keys[i]==describe){
+                            send_keys.splice(i-3,4);
+                            break 
+                        }
+                    }                   
+                }else if(td[4].innerHTML=='click'){ 
+                    var describe = td[9].innerHTML;
+                    // console.log(click)
+                    for(var i=0;i<click.length;i++ ){
+                        if(click[i]==describe){
+                            // console.log(i)
+                            click.splice(i-3,4);
+                            // console.log(click) 
+                            break 
+                        }
+                    }                  
+                }else if(td[4].innerHTML=='clear'){
+                    var describe = td[9].innerHTML;
+                    for(var i=0;i<clear.length;i++ ){
+                        if(clear[i]==describe){
+                            clear.splice(i-3,4);
+                            break 
+                        }
+                    }     
+                }else if(td[4].innerHTML=='text'){
+                    var describe = td[9].innerHTML;
+                    for(var i=0;i<text.length;i++ ){
+                        if(text[i]==describe){
+                            text.splice(i-3,4);
+                            break 
+                        }
+                    }                    
+                }   
             }
         });
     });
-    var dataObj;
-    // 点击生成用例调，写入用例方法
-    $(document).ready(function(){
-        arrayObj.push(send_keys,click,clear,text);  
+    
+    arrayObj.push(send_keys,text,clear,click);
+    // 点击生成用例调，写入用例方法  
+    $(document).ready(function(){  
         $('#button1').click(function(){
-            $.ajax({
-                url:"{{url_for('test_class')}}",
-                type:'POST',
-                data:JSON.stringify({arrayObj}),
-                contentType:"application/json",
-                dataType:"json",
-                success:function(data){
-                    alert(data)
-                    dataObj = data;
-                    console.log(dataObj)
-                    // "{{url_for('test_class',case_vual="+dataObj+")}}"
-                    // window.location.href="{{url_for('test_class',case_vual="+dataObj+")}}"
+            document.getElementById('button1').style.display = "none";
+            $("#dt_id input").prop("checked",false);
+            // console.log(arrayObj.length)
+            for(var i=0;i<arrayObj.length;i++){
+                // console.log(i)
+                // console.log(arrayObj[i])
+                var a=i
+                if(arrayObj[i].length!=0){
+                    for(var j = 0;j < arrayObj[i].length/4;j++){
+                        var str1 = '<tr>'
+                            +'<td>'+ '步骤'+ a + '</td>'
+                            +'<td>'+ arrayObj[i][0] + '</td>'
+                            +'<td>'+ arrayObj[i][1] + '</td>'
+                            +'<td>'+ arrayObj[i][2] + '</td>'
+                            +'<td>'+ arrayObj[i][3] + '</td>'
+                            +'</tr>'
+                        document.getElementById("add_table").innerHTML += str1;
+                    }
+                }else{
+                    continue;
                 }
-            });    
+            }
         });
     });
+    function shengcheng(){
+        alert("生成用例成功")
+        console.log(arrayObj)
+        var arrayObjlist = new Array();
+        for(var i=0;i<arrayObj.length;i++){
+            if(arrayObj[i].length!=0){
+                arrayObjlist.push(arrayObj[i][0])
+                arrayObjlist.push(arrayObj[i][1])
+                break    
+            }
+            
+        }
+        for(var i=0;i<arrayObj.length;i++){
+            if(arrayObj[i].length!=0){
+                arrayObjlist.push(arrayObj[i][2])
+            }
+        }
+        localStorage.setItem("temp",arrayObjlist); //本地存入 参数： 1.调用的值 2.所要存入的数据 
+        // console.log(localStorage.getItem("temp"));//输出
+        window.location.href="{{url_for('test_class_value')}}"
+        
+        // $.ajax({
+        //     url:"{{url_for('insert_test_class')}}",
+        //     type:'POST',
+        //     data:JSON.stringify({arrayObj}),
+        //     contentType:"application/json",
+        //     dataType:"json",
+        //     success:function(data){
+        //         alert(data)
+        //         window.location.href="{{url_for('test_class_value')}}"
+        //     }
+        // }); 
+    }
+    
+    //展示选择的测试步骤
+    function show(){
+        document.getElementById('loginhah').style.display = "block";
+        document.getElementById('over').style.display = "block";
+    }
+    //隐藏选择的测试步骤
+    function hide(){
+        document.getElementById('loginhah').style.display = "none";
+        document.getElementById('over').style.display = "none";
+        window.location.reload();
+    }
 
 </script>
+
+
 
 <form id="form1" runat="server">
     <div id="list">
         <fieldset style="position: relative">
-        <button type="button" style="font-size: 16px; padding: 0px 30px;" id='button1' value='click'>生成用例</button> 
+        <button type="button" style="font-size: 16px; padding: 0px 30px;" id='button1' value='click' onclick="show()">生成步骤列表</button> 
         <legend>自动化测试步骤</legend>
+        <div id="loginhah" style="display:none">
+            <div>请确认生成的步骤</div>
+            <table id="add_table" border="1" cellspacing="0" cellpadding="8" >
+                <tr>
+                    <td ></td>
+                    <td >模块名称</td>
+                    <td >模块编号</td>  
+                    <td >操作</td>                
+                    <td >步骤描述</td>    
+                </tr>                
+            </table>
+            <a style="font-size: 16px;" href="javascript:hide()" >重新选择</a>   
+            <a style="font-size: 16px;" href="javascript:shengcheng()" >生成用例</a>     
+        </div>
+        <div id="over"></div>
             <div class="p">
                 <table id="example_table" border="1" cellspacing="0" cellpadding="8" >
                     <tr>
@@ -134,4 +249,9 @@
         </fieldset>  
     </div>
 </form>
+
+
+
+
+
 {% endblock %}

@@ -4,3 +4,4 @@ USER = 'root'
 PASSWORD = 'root' 
 DATABASE = 'douban'
 CHARSET = 'utf8'
+URL = "http://www.baidu.com"
