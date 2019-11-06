@@ -36,11 +36,5 @@ test = driver.find_element_by_class_name('portfolio')
 # profile.set_proxy(proxy.selenium_proxy()) 
 # driver = webdriver.Firefox(firefox_profile=profile) 
 
-# proxy.new_har("baidu") 
-# driver.get("http://api.ebrun.com/api/manage/activity/apply-activity-material?meeting_id=1958&luck_draw_id=49&uid&source=H5&name=接口测试吴平兰&phone=18610851331&company=测试&job=测试&email=xiaowuaaaaa@qq.com") 
-# proxy.wait_for_traffic_to_stop(1, 60) 
-# with open('/Users/wupinglan/Desktop/git/flaskproject/case/1.har', 'w') as outfile:
-#     json.dump(proxy.har, outfile) 
-
 # server.stop() 
 # driver.quit() 
